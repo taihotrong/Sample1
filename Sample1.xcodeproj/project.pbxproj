@@ -14,6 +14,7 @@
 		B02EFD991AB9640600C754AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02EFD981AB9640600C754AD /* Images.xcassets */; };
 		B02EFD9C1AB9640600C754AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02EFD9A1AB9640600C754AD /* LaunchScreen.xib */; };
 		B02EFDA81AB9640600C754AD /* Sample1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B02EFDA71AB9640600C754AD /* Sample1Tests.m */; };
+		B02EFDB31AB9851800C754AD /* midu.png in Resources */ = {isa = PBXBuildFile; fileRef = B02EFDB21AB9851800C754AD /* midu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B02EFDA11AB9640600C754AD /* Sample1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sample1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02EFDA61AB9640600C754AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B02EFDA71AB9640600C754AD /* Sample1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sample1Tests.m; sourceTree = "<group>"; };
+		B02EFDB21AB9851800C754AD /* midu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = midu.png; path = ../../midu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		B02EFD8A1AB9640600C754AD /* Sample1 */ = {
 			isa = PBXGroup;
 			children = (
+				B02EFDB11AB9848E00C754AD /* Resources */,
 				B02EFD8F1AB9640600C754AD /* AppDelegate.h */,
 				B02EFD901AB9640600C754AD /* AppDelegate.m */,
 				B02EFD921AB9640600C754AD /* ViewController.h */,
@@ -117,6 +120,14 @@
 				B02EFDA61AB9640600C754AD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B02EFDB11AB9848E00C754AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B02EFDB21AB9851800C754AD /* midu.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			files = (
 				B02EFD971AB9640600C754AD /* Main.storyboard in Resources */,
 				B02EFD9C1AB9640600C754AD /* LaunchScreen.xib in Resources */,
+				B02EFDB31AB9851800C754AD /* midu.png in Resources */,
 				B02EFD991AB9640600C754AD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,9 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Sample1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -355,9 +369,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Sample1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -414,6 +430,7 @@
 				B02EFDAD1AB9640600C754AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B02EFDAE1AB9640600C754AD /* Build configuration list for PBXNativeTarget "Sample1Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +439,7 @@
 				B02EFDB01AB9640600C754AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

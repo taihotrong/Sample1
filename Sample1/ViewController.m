@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"midu.png"]];
+    NSLog(@"end\n");
+    
+    
+}
+- (IBAction)touchdown:(id)sender {
+    
 }
 
 - (void)didReceiveMemoryWarning {
